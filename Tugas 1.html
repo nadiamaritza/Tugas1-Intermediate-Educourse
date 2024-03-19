@@ -1,0 +1,209 @@
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    <style>
+        body,
+        html {
+            height: 100%;
+            font-family: "Inconsolata", sans-serif;
+        }
+
+        .bgimg {
+            background-position: center;
+            background-size: cover;
+            /* Di bawah ini (yang diapit kutip) adalah background header yaitu gambar foto pahlawan nasional, silakan ganti dengan file lain*/
+            background-image: <img src="Background English For the Blind.png" alt="Gambar Background English For the Blind">
+
+            min-height: 75%;
+        }
+
+        .menu {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Links (sit on top) Daftar link yang ada di bagian atas halaman -->
+    <div class="w3-top">
+        <div class="w3-row w3-padding w3-black">
+            <div class="w3-col s3">
+                <a href="#" class="w3-button w3-block w3-black">Beranda</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#aboutus" class="w3-button w3-block w3-black">About Us</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#ourprogram" class="w3-button w3-block w3-black">Our Program</a>
+            </div>
+            <div class="w3-col s3">
+                <a href="#definiteyourchoice" class="w3-button w3-block w3-black">Definite Your Choice</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header with image/ Header dengan gambar -->
+    <header class="bgimg w3-display-container w3-grayscale-min" id="home">
+        <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+            <span class="w3-tag">Welcome to English for the blind</span>
+        </div>
+        <div class="w3-display-middle w3-center">
+            <span class="w3-text-white" style="font-size:90px">International<br>language</span>
+        </div>
+        <div class="w3-display-bottomright w3-center w3-padding-large">
+            <span class="w3-text-white">Lets go to learn!</span>
+        </div>
+    </header>
+
+    <!-- Menambahkan warna background dan tulisan besar di seluruh halaman -->
+    <div class="w3-sand w3-grayscale w3-large">
+
+        <!-- Kontainer English For The Blind -->
+        <div class="w3-container" id="englishfortheblind">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">About Us</span></h5>
+                <p>
+                    Tahukah teman-teman bahasa apa yang sangat penting dipelajari selain bahasa ibu? Itu adalah bahasa Inggris
+                    yang sering dikenal dengan bahasa internasional.</p>
+                <p>Ada banyak hal yang bisa kita pelajari dengan menguasai bahasa ini. Hal itu disebabkan karena literatur yang tersedia mayoritas berbahasa Inggris.</p>
+                <!-- Di bawah ini ada tempat untuk menaruh quote/ kata mutiara-->
+                <div class="w3-panel w3-leftbar w3-light-grey">
+                    <p><i>"Pelajari bahasanya dan tingkatkan kualitas diri"</i></p>
+                    <p>Nadia</p>
+                </div>
+                <!-- Di bawah ini adalah gambar pahlawan nasional. Silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Logo English For the Blind"
+                    src="Logo English For the Blind.png"
+                    style="width:100%;max-width:1000px" class="w3-margin-top">
+
+            </div>
+        </div>
+
+        <!-- Kontainer Our Program -->
+        <div class="w3-container" id="ourprogram">
+            <div class="w3-content" style="max-width:700px">
+
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Our Program</span></h5>
+
+                <div class="w3-row w3-center w3-card w3-padding">
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'LevelBasic');" id="myLink">
+                        <div class="w3-col s6 tablink">Level Basic</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'LevelIntermediate');">
+                        <div class="w3-col s6 tablink">Level Intermediate</div>
+                    </a>
+                    <a href="javascript:void(0)" onclick="openMenu(event, 'LevelAdvance');">
+                        <div class="w3-col s6 tablink">Level Advance</div>
+                    </a>
+                </div>
+
+                <div id="LevelBasic" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Pelajaran 1</h5>
+                    <p class="w3-text-grey">Mengenal huruf dan angka</p><br>
+
+                    <h5>Pelajaran 2</h5>
+                    <p class="w3-text-grey">Mengenal kosakata</p><br>
+
+                    <h5>Pelajaran 3</h5>
+                    <p class="w3-text-grey">Belajar menyusun kalimat</p><br>
+
+                    <h5>Pelajaran 4</h5>
+                    <p class="w3-text-grey">Mengetahui hukum kalimat</p><br>
+
+                </div>
+
+                <div id="LevelIntermediate" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Pelajaran 1</h5>
+                    <p class="w3-text-grey">Mempelajari tense</p><br>
+
+                    <h5>Pelajaran 2</h5>
+                    <p class="w3-text-grey">Belajar menterjemahkan teks dongeng berbahasa Inggris</p><br>
+
+                    <h5>Pelajaran 3</h5>
+                    <p class="w3-text-grey">Belajar menterjemah video animasi</p><br>
+
+                    <h5>Pelajaran 4</h5>
+                    <p class="w3-text-grey">Belajar membuat paragraf sederhana</p><br>
+
+                </div>
+
+                <div id="LevelAdvance" class="w3-container menu w3-padding-48 w3-card">
+                    <h5>Pelajaran 1</h5>
+                    <p class="w3-text-grey">Belajar menerjemahkan teks deskriptif, explanasi dan prosedur</p><br>
+
+                    <h5>Pelajaran 2</h5>
+                    <p class="w3-text-grey">Belajar menterjemahkan teks teks berita dan menyimak berita yang disampaikan di youtube atau media lainnya</p><br>
+
+                    <h5>Pelajaran 3</h5>
+                    <p class="w3-text-grey">Belajar menganalisa artikel atau karya ilmiah lainnya</p><br>
+
+                    <h5>Pelajaran 4</h5>
+                    <p class="w3-text-grey">Belajar membuat artikel</p><br>
+
+                </div>
+
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar sekelompok orang sedang belajar"
+                    src="Gambar Sekelompok Orang Sedang Belajar.jpg"
+                    style="width:100%;max-width:1000px;margin-top:32px;">
+            </div>
+        </div>
+
+        <!-- Kontainer Definite Your Choice -->
+        <div class="w3-container" id="definiteyourchoice" style="padding-bottom:32px;">
+            <div class="w3-content" style="max-width:700px">
+                <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">Definite your choice!</span></h5>
+                <p>Pilihlah level yang ingin dipelajari</p>
+                <!--Di bawah ini ada gambar pahlawan secara umum, silakan ganti bagian yang diapit quote pada atribut src-->
+                <img alt="Gambar sekelompok orang sedang mengetik"
+                    src="Gambar Sekelompok Orang Sedang Belajar.jpg" class="w3-image"
+                    style="width:100%">
+                <p><span class="w3-tag">AYO!</span>Pelajari dan tingkatkan skill bahasamu</p>
+
+                <form action="/action_page.php" target="_blank">
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nama" required
+                            name="Nama"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Level program"
+                            required name="Level Program"></p>
+                    <p><input class="w3-input w3-padding-16 w3-border" type="text"
+                            placeholder="Alasan memilih program" required name="Alasan memilih program"></p>
+                    <p><button class="w3-button w3-black" type="submit">KIRIM</button></p>
+                </form>
+            </div>
+        </div>
+
+        <!-- End page content -->
+    </div>
+
+    <!-- Footer -->
+    <footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+        <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank"
+                class="w3-hover-text-green">w3.css</a></p>
+    </footer>
+
+    <script>
+        // Tabbed Menu
+        function openMenu(evt, menuName) {
+            var i, x, tablinks;
+            x = document.getElementsByClassName("menu");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablink");
+            for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+            }
+            document.getElementById(menuName).style.display = "block";
+            evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+        }
+        document.getElementById("myLink").click();
+    </script>
+
+</body>
+
+</html>
