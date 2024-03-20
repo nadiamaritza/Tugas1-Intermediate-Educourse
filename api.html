@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+    </style>
+    <script>
+        function submit() {
+            var username = document.getElementById('username').value;
+            var link = "https://api.github.com/users/" + username;
+            var JSONtext = '';
+            const xhttp = new XMLHttpRequest();
+            xhttp.onload = function () {
+                JSONtext = this.responseText;
+                const JSONobject = JSON.parse(JSONtext);
+                //document.getElementById("userInfo").innerHTML = this.responseText;
+                document.getElementById("userID").innerHTML = JSONobject.login;
+                document.getElementById("userPhoto").src = JSONobject.avatar_url;
+                document.getElementById("userCreated_at").innerHTML = JSONobject.created_at;
+                document.getElementById("userUpdated_at").innerHTML = JSONobject.updated_at;
+            }
+            xhttp.open("GET", link);
+            xhttp.send();
+        }
+    </script>
+    <input id="username" />
+    <button type="button" id="submit" onclick="submit()">Submit</button>
+    <p><label id="userID"></label></p>
+    <img id="userPhoto">
+    <p>Registration of Date: <label id="userCreated_at"></label></p>
+    <p>Date of Last Update: <label id="userUpdated_at"></label></p>
+    </body>
+</html>
