@@ -22,17 +22,17 @@
         function loadDoc() {
             const xhttp = new XMLHttpRequest();
             xhttp.onload = function () {
-                var Amina's = "<ul>";
+                var aminas = "<ul>";
                 var fileContent = this.responseText;
                 var textLines = fileContent.split("\n");
                 for (var i = 0, j = textLines.length; i < j; i++) {
                     var currentLine = textLines[i];
                     // for each line
                     var voice = "<li>" + currentLine + "</li>";
-                    amina's += voice;
+                    aminas += voice;
                 }
-                amina's += "</ul>";
-                document.getElementById("demo2").innerHTML = amina's;
+                aminas += "</ul>";
+                document.getElementById("demo2").innerHTML = aminas;
             }
             xhttp.open("GET", "amina's_voice.txt");
             xhttp.send();
@@ -40,4 +40,3 @@
     </script>
 </body>
 </html>
-
